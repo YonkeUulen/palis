@@ -1,0 +1,161 @@
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.mapSection {
+  width: 100%;
+  height: 100%;
+}
+
+.buttonsWrapper {
+  position: absolute;
+  bottom: var(--space-5);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+.alarmButton {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-round);
+  background: var(--color-error-9);
+  border: 3px solid white;
+  box-shadow: var(--shadow-4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.alarmButton:hover {
+  background: var(--color-error-10);
+  transform: scale(1.05);
+}
+
+.alarmButton:active {
+  transform: scale(0.95);
+}
+
+.policeIcon {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.topPanel {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  align-items: flex-end;
+}
+
+.topRow {
+  display: flex;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+.counters {
+  display: flex;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+.userCount {
+  background: var(--color-neutral-1);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-round);
+  box-shadow: var(--shadow-3);
+  border: var(--border-size-1) solid var(--color-neutral-5);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font: var(--font-body);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.userCount:hover {
+  background: var(--color-neutral-2);
+  border-color: var(--color-accent-7);
+  transform: translateY(-1px);
+}
+
+.userCount:active {
+  transform: translateY(0);
+}
+
+.userCount svg {
+  color: var(--color-accent-9);
+}
+
+.policeCount {
+  background: var(--color-neutral-1);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-round);
+  box-shadow: var(--shadow-3);
+  border: var(--border-size-1) solid var(--color-neutral-5);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font: var(--font-body);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.policeCount:hover {
+  background: var(--color-neutral-2);
+  border-color: var(--color-error-7);
+  transform: translateY(-1px);
+}
+
+.policeCount:active {
+  transform: translateY(0);
+}
+
+.policeCount svg {
+  color: var(--color-error-9);
+}
+
+.nameBox {
+  background: var(--color-neutral-1);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-round);
+  box-shadow: var(--shadow-3);
+  border: var(--border-size-1) solid var(--color-neutral-5);
+  font: var(--font-body);
+  color: var(--color-neutral-12);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  width: fit-content;
+}
+
+.nameBox:hover {
+  background: var(--color-neutral-2);
+  border-color: var(--color-accent-7);
+}
+
+.nameInputField {
+  flex: 1;
+  min-width: 0;
+  font-size: 14px;
+  padding: var(--space-1) var(--space-2);
+}

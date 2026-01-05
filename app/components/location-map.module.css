@@ -1,0 +1,30 @@
+.mapContainer {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-3);
+  overflow: hidden;
+  box-shadow: var(--shadow-2);
+  position: relative;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.markerPopup {
+  font: var(--font-caption);
+  text-align: center;
+}
+
+.markerName {
+  font-weight: 600;
+  color: #000;
+  margin-bottom: var(--space-1);
+}
+
+.markerTime {
+  font-size: var(--font-size-00);
+  color: #000;
+}
